@@ -1,0 +1,9 @@
+.build/
+.config.old
+.directory
+build.log
+config
+config.backup
+config.gen/
+samples/
+

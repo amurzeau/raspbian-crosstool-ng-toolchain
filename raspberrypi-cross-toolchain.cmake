@@ -1,10 +1,12 @@
-    # this one is important
+# Put this file where the toolchain is (next to bin/ folder)
+# this one is important
 SET(CMAKE_SYSTEM_NAME Linux)
 set(CMAKE_SYSTEM_PROCESSOR arm)
 
 #set(CMAKE_SYSROOT path/to/raspbian/chroot)
 
-set(CROSS_COMPILER_PREFIX "armv6-raspbian-linux-gnueabihf-")
+set(CROSS_COMPILER_ROOT ${CMAKE_CURRENT_LIST_DIR}/bin/)
+set(CROSS_COMPILER_PREFIX "arm-raspbian-linux-gnueabihf-")
 
 # specify the cross compiler
 SET(CMAKE_C_COMPILER ${CROSS_COMPILER_ROOT}${CROSS_COMPILER_PREFIX}gcc)
